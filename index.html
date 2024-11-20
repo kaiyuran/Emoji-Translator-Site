@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>😊Emoji Translator😀</title>
+</head>
+<body>
+    <h1>😊Emoji Translator😀</h1>
+    <div class="layout">
+        <div class="sidebarLeft">
+            <img src="resources\sidebar.jpg" alt="Left Sidebar" />
+        </div>
+
+        <div class="mainContent">
+            <div class="userInput">
+                <p>Enter text to translate</p>
+                <textarea name="userInput" id="userInput" cols="30" rows="10" onchange="convertEmoji()"></textarea>
+            </div>
+
+            <div class="output">
+                <p>Waiting</p>
+                <textarea name="output" id="output" cols="30" rows="10"></textarea>
+                <a href="https://github.com/kaiyuran"><p id="credits"> Made  with 😈</p></a>
+            </div>
+            
+        </div>
+            
+        <div class="sidebarRight">
+            <img src="resources\sidebar.jpg" alt="Right Sidebar" />
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Title */
+h1 {
+    text-align: center;
+    color: #ffb02e;
+    background-color: aqua;
+    font-size: 50px;
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Add spacing around the title */
+}
+
+/* Ensure sidebars and main content are laid out properly */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: flex; /* Flex container for sidebars and main content */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Sidebars */
+.sidebarLeft, .sidebarRight {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    height: 100%;
+
+    background-image: url("resources/sidebar.jpg"); /* Path to your image */
+    background-repeat: repeat-y; /* Repeat the image vertically */
+    background-size: contain; /* Adjust the image size to fit the width */
+    background-position: center; /* Center the image horizontally */
+}
+
+.sidebarLeft img, .sidebarRight img {
+    max-height: 100%;
+    max-width: 100%;
+    /* height: auto; */
+    object-fit: contain;
+}
+
+/* Main Content */
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #afff2e; 
+    margin: 0 50px;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
