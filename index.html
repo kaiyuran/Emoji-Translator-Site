@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>😊Emoji Translator😀</title>
 </head>
-<body>
+<body background="resources/background.jpg">
     <h1>😊Emoji Translator😀</h1>
     <div class="layout">
         <div class="sidebarLeft">
@@ -15,12 +15,12 @@
 
         <div class="mainContent">
             <div class="userInput">
-                <p>Enter text to translate</p>
+                <p id="prompt1">Enter text to translate</p>
                 <textarea name="userInput" id="userInput" cols="30" rows="10" onchange="convertEmoji()"></textarea>
             </div>
 
             <div class="output">
-                <p>Waiting</p>
+                <p id="prompt1">Result</p>
                 <textarea name="output" id="output" cols="30" rows="10"></textarea>
                 <a href="https://github.com/kaiyuran"><p id="credits"> Made  with 😈</p></a>
             </div>
